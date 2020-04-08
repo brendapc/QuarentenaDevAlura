@@ -1,7 +1,56 @@
-div {
-    width: 60%;
-    background-color: darkgray;
-    margin: 0 auto;
-    padding: 100px;
-    margin-left: 500px;
+body{
+    background-color: lightslategrey;
 }
+div#center {
+    background-color: lightskyblue;
+    margin: 0 auto;
+    padding: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    height: 500px;
+    text-align: center;
+}
+input#myinput{
+    position: relative;
+            text-align: center ;
+            padding: 10px;
+            border-radius: 15px 15px 15px 15px;
+}
+input#submit{
+    margin-top: 20px;
+    border-radius: 10px;
+
+}
+label{
+    font: normal 10pt ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: left;
+    
+}
+/*<style>
+        div {
+            width: auto;
+            background-color: darkgray;
+            margin: 0 auto;
+            padding: 80px;
+            margin-left: 500px;
+            margin-right: 500px;
+            margin-top: 120px;
+            border-radius: 15px 15px 15px 15px;
+        }
+        #myinput{
+            position: relative;
+            text-align: center ;
+            padding: 10px;
+            border-radius: 15px 15px 15px 15px;
+        }
+        #submit{
+            width: auto;
+            text-align: center ;
+            padding: 5px;
+            border-radius: 15px 15px 15px 15px;
+            margin-left: 60px;
+            margin-right: 10px;
+
+        }
+    </style>
