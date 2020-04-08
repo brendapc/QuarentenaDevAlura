@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão de like</title>
+    <script>
+        likes = 0
+        function rodar(){
+            p = document.querySelector("p#p1")
+            likes += 1
+            p.innerHTML = likes + 'like'
+        }
+    </script>
+</head>
+<body>
+    <button id="botao" onclick="rodar()">0 like</button>
+
+    <p id="p1"></p>
+</body>
+</html>

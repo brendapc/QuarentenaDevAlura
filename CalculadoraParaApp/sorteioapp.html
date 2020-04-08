@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sorteio</title>
+    <style>
+        body{
+            background-color: lightslategrey;
+        }
+        div {
+            background-color: whitesmoke;
+            margin: 0 auto;
+            padding: 10px;
+            margin-left: 500px;
+            margin-right: 500px;
+            height: 500px;
+            text-align: center;
+        }
+        input#myinput{
+            position: relative;
+                    text-align: center ;
+                    padding: 10px;
+                    border-radius: 15px 15px 15px 15px;
+        }
+        input#submit{
+            margin-top: 20px;
+            border-radius: 10px;
+
+        }
+        label{
+            font: normal 10pt ;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: left;
+    
+}
+    </style>
+    <script>
+        function rodar(){
+            var num = prompt('digite seu numero até 10')
+            var numdasorte = Math.round(Math.random()*10)
+            var numerocerto = num == numdasorte
+            var p = document.querySelector('p#pg')
+            
+            while(num>10 || num<0 ){
+                num = prompt('numero inválido digite um num menor que 10')
+
+                if(numerocerto){
+                    p.innerHTML =`ganhou o sorteio!, o numero era ${numdasorte}`
+                }else if(!numerocerto){
+                    p.innerHTML = `não foi dessa vez, o numero era ${numdasorte}`
+                }
+            }
+            if(numerocerto){
+                p.innerHTML =`ganhou o sorteio!, o numero era ${numdasorte}`
+            }else if(!numerocerto){
+                p.innerHTML = `não foi dessa vez, o numero era ${numdasorte}`
+                p.style.backgroundColor = 'red'
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <div>
+    <p id="paragrafoResultado"></p>
+    clique no botão para concorre a uma corrida gratis
+    <button type="button" onclick="rodar()" id="btnsorteio">clique aqui</button>
+    <p id="pg"></p>
+    </div>
+
+</body>
+</html>
